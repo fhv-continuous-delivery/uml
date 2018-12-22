@@ -1,6 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_nHLUQAXIEemfJ_J-gXsgUQ" name="uml">
-  <packageImport xmi:type="uml:PackageImport" xmi:id="_nbMccAXIEemfJ_J-gXsgUQ">
-    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
-  </packageImport>
-</uml:Model>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:model="http:///schemas/model/_EUgNQAXNEemfJ_J-gXsgUQ/2" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/model/_EUgNQAXNEemfJ_J-gXsgUQ/2 model.profile.uml#_EUg0UAXNEemfJ_J-gXsgUQ">
+  <uml:Model xmi:id="_nHLUQAXIEemfJ_J-gXsgUQ" name="uml">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_nbMccAXIEemfJ_J-gXsgUQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_o2EFsAXNEemfJ_J-gXsgUQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_7LSwkAXNEemfJ_J-gXsgUQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_K0YawAXNEemfJ_J-gXsgUQ" name="at.fhv.cicd.application">
+      <packagedElement xmi:type="uml:Package" xmi:id="_Q_Sd0AXNEemfJ_J-gXsgUQ" name="endpoints">
+        <packagedElement xmi:type="uml:Class" xmi:id="_jZ0C8AXOEemfJ_J-gXsgUQ" name="AnalysisEndpoint">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ukytoAXOEemfJ_J-gXsgUQ" name="analyze">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_zm58oAXOEemfJ_J-gXsgUQ" name="text">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_1JbfUAXOEemfJ_J-gXsgUQ" name="token">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_8aAJ8AXOEemfJ_J-gXsgUQ" type="_cscBcAXNEemfJ_J-gXsgUQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_lWmfwAXOEemfJ_J-gXsgUQ" name="HistoryEndpoint">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_DSaMMAXPEemfJ_J-gXsgUQ" name="getHistory">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Gw9WsAXPEemfJ_J-gXsgUQ" name="token">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_I9VusAXPEemfJ_J-gXsgUQ" type="_ZqHf8AXNEemfJ_J-gXsgUQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_mZAX8AXOEemfJ_J-gXsgUQ" name="AuthEndpoint">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_MBomIAXPEemfJ_J-gXsgUQ" name="login">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Q6JNMAXPEemfJ_J-gXsgUQ" name="email">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_R2SsYAXPEemfJ_J-gXsgUQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_MwDyYAXPEemfJ_J-gXsgUQ" name="logout">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_UGB6YAXPEemfJ_J-gXsgUQ" name="token">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_SQKP0AXNEemfJ_J-gXsgUQ" name="handlers">
+        <packagedElement xmi:type="uml:Class" xmi:id="_csW3AAXPEemfJ_J-gXsgUQ" name="AnalysisHandler">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_hQ9qoAXPEemfJ_J-gXsgUQ" name="analyze">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_hQ9qoQXPEemfJ_J-gXsgUQ" name="text">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_hQ9qogXPEemfJ_J-gXsgUQ" name="token">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_hQ9qowXPEemfJ_J-gXsgUQ" type="_cscBcAXNEemfJ_J-gXsgUQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_dsxLIAXPEemfJ_J-gXsgUQ" name="HistoryHandler">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_qLkOIAXPEemfJ_J-gXsgUQ" name="getHistory">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_qLkOIQXPEemfJ_J-gXsgUQ" name="token">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_qLkOIgXPEemfJ_J-gXsgUQ" type="_ZqHf8AXNEemfJ_J-gXsgUQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_t8vZsAXPEemfJ_J-gXsgUQ" name="addHistory">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_wpLx0AXPEemfJ_J-gXsgUQ" name="token">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_ydlusAXPEemfJ_J-gXsgUQ" name="text">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_zwzDAAXPEemfJ_J-gXsgUQ" name="result" type="_cscBcAXNEemfJ_J-gXsgUQ"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_e29GUAXPEemfJ_J-gXsgUQ" name="AuthHandler">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_lAM8gAXPEemfJ_J-gXsgUQ" name="logout">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_lAM8gQXPEemfJ_J-gXsgUQ" name="token">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_lAOKoAXPEemfJ_J-gXsgUQ" name="login">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_lAOKoQXPEemfJ_J-gXsgUQ" name="email">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_lAOKogXPEemfJ_J-gXsgUQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_WdADsAXNEemfJ_J-gXsgUQ" name="models">
+        <packagedElement xmi:type="uml:Class" xmi:id="_Ydt-QAXNEemfJ_J-gXsgUQ" name="User">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_eya2gAXNEemfJ_J-gXsgUQ" name="email">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_IqW9wAXOEemfJ_J-gXsgUQ" name="history" type="_ZqHf8AXNEemfJ_J-gXsgUQ" association="_IqNz0AXOEemfJ_J-gXsgUQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IqW9wQXOEemfJ_J-gXsgUQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IqXk0AXOEemfJ_J-gXsgUQ" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZqHf8AXNEemfJ_J-gXsgUQ" name="History">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OQ5IcgXOEemfJ_J-gXsgUQ" name="items" type="_bol-0AXNEemfJ_J-gXsgUQ" association="_OQ4hYAXOEemfJ_J-gXsgUQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OQ5IcwXOEemfJ_J-gXsgUQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OQ5IdAXOEemfJ_J-gXsgUQ" value="*"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_bol-0AXNEemfJ_J-gXsgUQ" name="HistoryItem">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3CpgMAXNEemfJ_J-gXsgUQ" name="text">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4j0_EAXNEemfJ_J-gXsgUQ" name="requested">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UaztAgXOEemfJ_J-gXsgUQ" name="result" type="_cscBcAXNEemfJ_J-gXsgUQ" association="_Uaye4AXOEemfJ_J-gXsgUQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ua0UEAXOEemfJ_J-gXsgUQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ua0UEQXOEemfJ_J-gXsgUQ" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cscBcAXNEemfJ_J-gXsgUQ" name="SentimentResult">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_jMXSQAXNEemfJ_J-gXsgUQ" name="sentiment">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9JT8cAXNEemfJ_J-gXsgUQ" name="confidence">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_IqNz0AXOEemfJ_J-gXsgUQ" memberEnd="_IqW9wAXOEemfJ_J-gXsgUQ _IqXk0QXOEemfJ_J-gXsgUQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IqT6cAXOEemfJ_J-gXsgUQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IqUhgAXOEemfJ_J-gXsgUQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_IqXk0QXOEemfJ_J-gXsgUQ" type="_Ydt-QAXNEemfJ_J-gXsgUQ" association="_IqNz0AXOEemfJ_J-gXsgUQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_OQ4hYAXOEemfJ_J-gXsgUQ" visibility="public" memberEnd="_OQ5IcgXOEemfJ_J-gXsgUQ _OQ5IdQXOEemfJ_J-gXsgUQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OQ5IcAXOEemfJ_J-gXsgUQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OQ5IcQXOEemfJ_J-gXsgUQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_OQ5IdQXOEemfJ_J-gXsgUQ" type="_ZqHf8AXNEemfJ_J-gXsgUQ" association="_OQ4hYAXOEemfJ_J-gXsgUQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Uaye4AXOEemfJ_J-gXsgUQ" memberEnd="_UaztAgXOEemfJ_J-gXsgUQ _Ua0UEgXOEemfJ_J-gXsgUQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UaztAAXOEemfJ_J-gXsgUQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UaztAQXOEemfJ_J-gXsgUQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Ua0UEgXOEemfJ_J-gXsgUQ" type="_bol-0AXNEemfJ_J-gXsgUQ" association="_Uaye4AXOEemfJ_J-gXsgUQ"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_GWLxIAXNEemfJ_J-gXsgUQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GWONYAXNEemfJ_J-gXsgUQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GWONYQXNEemfJ_J-gXsgUQ" key="Version" value="0.0.3"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GWONYgXNEemfJ_J-gXsgUQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GWONYwXNEemfJ_J-gXsgUQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GWONZAXNEemfJ_J-gXsgUQ" key="Date" value="2018-12-22"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GWONZQXNEemfJ_J-gXsgUQ" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GWNmUAXNEemfJ_J-gXsgUQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="model.profile.uml#_EUg0UAXNEemfJ_J-gXsgUQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="model.profile.uml#_u8I-AAXLEemfJ_J-gXsgUQ"/>
+    </profileApplication>
+  </uml:Model>
+  <model:Model xmi:id="_AmiRQAXOEemfJ_J-gXsgUQ" base_Class="_Ydt-QAXNEemfJ_J-gXsgUQ"/>
+  <model:Model xmi:id="_BE0IsAXOEemfJ_J-gXsgUQ" base_Class="_ZqHf8AXNEemfJ_J-gXsgUQ"/>
+  <model:Model xmi:id="_BtAxIAXOEemfJ_J-gXsgUQ" base_Class="_bol-0AXNEemfJ_J-gXsgUQ"/>
+  <model:Model xmi:id="_CVefUAXOEemfJ_J-gXsgUQ" base_Class="_cscBcAXNEemfJ_J-gXsgUQ"/>
+  <model:Write xmi:id="__KVjkAXOEemfJ_J-gXsgUQ" base_Operation="_ukytoAXOEemfJ_J-gXsgUQ"/>
+  <model:Endpoint xmi:id="_AjSTgAXPEemfJ_J-gXsgUQ" base_Class="_jZ0C8AXOEemfJ_J-gXsgUQ"/>
+  <model:Endpoint xmi:id="_B_6CgAXPEemfJ_J-gXsgUQ" base_Class="_lWmfwAXOEemfJ_J-gXsgUQ"/>
+  <model:Read xmi:id="_FG6PsAXPEemfJ_J-gXsgUQ" base_Operation="_DSaMMAXPEemfJ_J-gXsgUQ"/>
+  <model:Endpoint xmi:id="_Kr6JUAXPEemfJ_J-gXsgUQ" base_Class="_mZAX8AXOEemfJ_J-gXsgUQ"/>
+  <model:Write xmi:id="_NikNYAXPEemfJ_J-gXsgUQ" base_Operation="_MwDyYAXPEemfJ_J-gXsgUQ"/>
+  <model:Write xmi:id="_OBSwwAXPEemfJ_J-gXsgUQ" base_Operation="_MBomIAXPEemfJ_J-gXsgUQ"/>
+  <model:Handler xmi:id="_ip2wMAXPEemfJ_J-gXsgUQ" base_Class="_csW3AAXPEemfJ_J-gXsgUQ"/>
+  <model:Handler xmi:id="_msoCEAXPEemfJ_J-gXsgUQ" base_Class="_e29GUAXPEemfJ_J-gXsgUQ"/>
+  <model:Handler xmi:id="_rNmS4AXPEemfJ_J-gXsgUQ" base_Class="_dsxLIAXPEemfJ_J-gXsgUQ"/>
+</xmi:XMI>

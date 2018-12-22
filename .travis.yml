@@ -1,0 +1,15 @@
+language: java
+
+install:
+  - cd ..
+  - "git clone https://github.com/fhv-continuous-delivery/application.git"
+
+script:
+  - "cd uml"
+  - "mvn org.eclipse.acceleo:org.eclipse.acceleo.maven.launcher:acceleo-launcher"
+
+after_success:
+  - "cd ../application"
+  - "git add -A ."
+  - git commit -m "Update generated code"
+  - git push -f -q https://fhv-msi:$GITHUB_API_KEY@github.com/fhv-continuous-delivery/application.git master
