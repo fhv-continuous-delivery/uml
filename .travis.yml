@@ -12,4 +12,4 @@ after_success:
   - "cd ../application"
   - "git add -A ."
   - git commit -m "Update generated code"
-  - git push -f -q https://fhv-msi:$GITHUB_API_KEY@github.com/fhv-continuous-delivery/application.git master
+  - git push -f -q https://fhv-msi:$TRAVIS_GITHUB_TOKEN@github.com/fhv-continuous-delivery/application.git master

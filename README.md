@@ -21,4 +21,4 @@ mvn org.eclipse.acceleo:org.eclipse.acceleo.maven.launcher:acceleo-launcher
 
 ## Remote build
 Travis CI app is used to build the application. The build needs the following environment variables set in order to work:
-* GITHUB_API_KEY: This is the token used to push the generated code to the Github repository
+* TRAVIS_GITHUB_TOKEN: This is the token used to push the generated code to the Github repository
