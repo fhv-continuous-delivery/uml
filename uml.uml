@@ -114,6 +114,7 @@
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_4j0_EAXNEemfJ_J-gXsgUQ" name="requested">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_WHqksAYAEem51tOPzTEaEQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_UaztAgXOEemfJ_J-gXsgUQ" name="result" type="_cscBcAXNEemfJ_J-gXsgUQ" association="_Uaye4AXOEemfJ_J-gXsgUQ">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ua0UEAXOEemfJ_J-gXsgUQ"/>
@@ -126,6 +127,7 @@
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_9JT8cAXNEemfJ_J-gXsgUQ" name="confidence">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_YbiEwAYAEem51tOPzTEaEQ"/>
           </ownedAttribute>
         </packagedElement>
       </packagedElement>
