@@ -168,13 +168,13 @@
   <model:Model xmi:id="_BE0IsAXOEemfJ_J-gXsgUQ" base_Class="_ZqHf8AXNEemfJ_J-gXsgUQ"/>
   <model:Model xmi:id="_BtAxIAXOEemfJ_J-gXsgUQ" base_Class="_bol-0AXNEemfJ_J-gXsgUQ"/>
   <model:Model xmi:id="_CVefUAXOEemfJ_J-gXsgUQ" base_Class="_cscBcAXNEemfJ_J-gXsgUQ"/>
-  <model:Write xmi:id="__KVjkAXOEemfJ_J-gXsgUQ" base_Operation="_ukytoAXOEemfJ_J-gXsgUQ"/>
+  <model:Write xmi:id="__KVjkAXOEemfJ_J-gXsgUQ" base_Operation="_ukytoAXOEemfJ_J-gXsgUQ" path="/analyze"/>
   <model:Endpoint xmi:id="_AjSTgAXPEemfJ_J-gXsgUQ" base_Class="_jZ0C8AXOEemfJ_J-gXsgUQ"/>
   <model:Endpoint xmi:id="_B_6CgAXPEemfJ_J-gXsgUQ" base_Class="_lWmfwAXOEemfJ_J-gXsgUQ"/>
-  <model:Read xmi:id="_FG6PsAXPEemfJ_J-gXsgUQ" base_Operation="_DSaMMAXPEemfJ_J-gXsgUQ"/>
+  <model:Read xmi:id="_FG6PsAXPEemfJ_J-gXsgUQ" base_Operation="_DSaMMAXPEemfJ_J-gXsgUQ" path="/history"/>
   <model:Endpoint xmi:id="_Kr6JUAXPEemfJ_J-gXsgUQ" base_Class="_mZAX8AXOEemfJ_J-gXsgUQ"/>
-  <model:Write xmi:id="_NikNYAXPEemfJ_J-gXsgUQ" base_Operation="_MwDyYAXPEemfJ_J-gXsgUQ"/>
-  <model:Write xmi:id="_OBSwwAXPEemfJ_J-gXsgUQ" base_Operation="_MBomIAXPEemfJ_J-gXsgUQ"/>
+  <model:Write xmi:id="_NikNYAXPEemfJ_J-gXsgUQ" base_Operation="_MwDyYAXPEemfJ_J-gXsgUQ" path="/logout"/>
+  <model:Write xmi:id="_OBSwwAXPEemfJ_J-gXsgUQ" base_Operation="_MBomIAXPEemfJ_J-gXsgUQ" path="/login"/>
   <model:Handler xmi:id="_ip2wMAXPEemfJ_J-gXsgUQ" base_Class="_csW3AAXPEemfJ_J-gXsgUQ"/>
   <model:Handler xmi:id="_msoCEAXPEemfJ_J-gXsgUQ" base_Class="_e29GUAXPEemfJ_J-gXsgUQ"/>
   <model:Handler xmi:id="_rNmS4AXPEemfJ_J-gXsgUQ" base_Class="_dsxLIAXPEemfJ_J-gXsgUQ"/>
