@@ -103,7 +103,7 @@
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_ZqHf8AXNEemfJ_J-gXsgUQ" name="History">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_OQ5IcgXOEemfJ_J-gXsgUQ" name="items" type="_bol-0AXNEemfJ_J-gXsgUQ" association="_OQ4hYAXOEemfJ_J-gXsgUQ">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OQ5IcgXOEemfJ_J-gXsgUQ" name="items" type="_bol-0AXNEemfJ_J-gXsgUQ" isOrdered="true" association="_OQ4hYAXOEemfJ_J-gXsgUQ">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OQ5IcwXOEemfJ_J-gXsgUQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OQ5IdAXOEemfJ_J-gXsgUQ" value="*"/>
           </ownedAttribute>
